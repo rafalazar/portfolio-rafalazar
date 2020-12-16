@@ -1,0 +1,205 @@
+* {
+    margin: 0px;
+}
+
+body {
+    background-color: #192a56;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    padding: 0 50px;
+}
+
+header{
+    width: 100%;
+}
+
+header h1{
+    font-size: 60px;
+    font-weight: 500;
+    padding: 20px;
+    text-align: center;
+}
+
+header h2 {
+    font-family: 'Russo One', sans-serif;
+    font-weight: 50;
+    text-align: center;
+    width: 100%;
+}
+
+.main__about {
+    align-items: center;
+    background-color: rgba(0, 168, 255, 0.4);
+    border: 1px solid rgb(0, 168, 255);
+    display: flex;
+    height: 400px;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.about__left h3{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.about__left h4{
+    text-align: center;
+    margin-top: 5px;
+}
+
+.about__img {
+    border-radius: 140px;
+    height: 250px;
+    border: 1.5px solid rgb(0, 168, 255);
+}
+
+.about__right {
+    background-color: rgb(0, 168, 255);
+    padding: 20px;
+}
+
+.about__p {
+    font-size: 20px;
+    text-align: justify;
+    width: 400px;
+}
+
+.main__skills {
+    background-color: rgba(232, 65, 24, 0.4);
+    border: 1px solid rgb(232, 65, 24);
+    margin-top: 50px;
+    padding-top: 20px;
+}
+
+.skills__header {
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+}
+
+.skills__header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 100px;
+    background-color: rgb(232, 65, 24);
+    border-radius: 2px;
+}
+
+.skills_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem 80px;
+    font-size: 1.2rem;
+}
+
+.skill_box {
+    padding: 1rem;
+    color: #ddd;
+    cursor: pointer;
+}
+
+.skill_box:hover .skill_img{
+    transform: translateY(-10px);
+}
+
+.skill_box:hover > .skill__title::after, .skill_box:hover > .skill__title::before {
+    width: 35px;
+}
+
+.skill__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.skill__title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    width: 0px;
+    height: 4px;
+    border-radius: 2px 0 0 2px;
+    background-color: rgb(232, 65, 24);
+    transition: .5s;
+}
+
+.skill__title::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0px;
+    height: 4px;
+    border-radius: 0 2px 2px 0;
+    background-color: rgb(232, 65, 24);
+    transition: .5s;
+}
+
+.skill__title h3 {
+    color: #fff;
+    margin-top: 0.5rem;
+}
+
+.skill_img {
+    width: 90px;
+    height: 90px;
+    position: relative;
+    border-radius: 45px;
+    border: 1.5px solid rgb(232, 65, 24);
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.skill_img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 90px;
+    background-color: rgba(100, 100, 100, 0.4);
+    border-radius: 45px 0 0 45px;
+}
+
+.skill__icon {
+    width: 60px;
+    z-index: 2;
+}
+
+.main__projects {
+    background-color: rgba(76, 209, 55, 0.4);
+    border: 1px solid rgb(76, 209, 55);
+    margin-top: 50px;
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 990px) {
+    .skills_container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem 50px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .skills_container {
+        grid-template-columns: 1fr;
+    }
+}
