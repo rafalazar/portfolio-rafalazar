@@ -355,6 +355,12 @@ footer {
     background-color: rgba(53, 59, 72, 0.4);
     height: 80px;
     width: 100%;
+    margin-top: 50px;
+    border-radius: 15px;
+}
+
+footer p {
+    text-align: center;
 }
 
 @media screen and (max-width: 990px) {
