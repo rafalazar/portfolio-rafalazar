@@ -351,26 +351,79 @@ header h2 {
 }
 /*prueba contacto*/
 
-footer {
-    background-color: rgba(53, 59, 72, 0.4);
-    height: 80px;
-    width: 100%;
+
+/* Footer section */
+.main__footer {
+    background-color: rgba(53, 59, 72,0.4);
+    border: 1px solid rgb(53, 59, 72);
     margin-top: 50px;
+    padding-top: 20px;
     border-radius: 15px;
+    margin-bottom: 15px;
 }
 
-footer p {
+.footer__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    gap: 1rem;
+    padding: 0 40px;
+    font-size: 1.2rem;
+}
+
+.footer__box {
+    padding: 1rem;
+    color: #ddd;
+}
+
+.footer__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.footer__title h3{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    font-size: 20px;
+}
+
+.footer__logo {
+    width: 180px;
+}
+
+.footer__img {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+    justify-content: space-between;
+}
+
+.footer__icon {
+    width: 50px;
+    z-index: 2;
 }
 
 @media screen and (max-width: 990px) {
+    .about__container {
+        padding: 2rem 50px;
+    }
+
     .skills_container {
         grid-template-columns: repeat(2, 1fr);
         padding: 2rem 50px;
     }
 
-    .about__container {
-        padding: 2rem 50px;
+    .footer__container {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -380,6 +433,10 @@ footer p {
     }
 
     .about__container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer__container {
         grid-template-columns: 1fr;
     }
 }
