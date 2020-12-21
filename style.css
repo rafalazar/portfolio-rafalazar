@@ -75,6 +75,7 @@ header h2 {
     border-radius: 140px;
     width: 245px;
     border: 1.5px solid rgb(0, 168, 255);
+    margin: 10px;
 }
 
 .about__right {
@@ -84,14 +85,14 @@ header h2 {
     justify-content: center;
 }
 
-.box-2 {
-    grid-area: 1 / 2 / span 2 / 2;
-}
-
 .about__p {
     font-size: 20px;
     text-align: justify;
     width: 400px;
+}
+
+.about__left {
+
 }
 
 /*------Skills Section--------*/
@@ -414,10 +415,16 @@ header h2 {
 
 @media screen and (max-width: 990px) {
     .about__container {
+        grid-template-columns: repeat(2, 1fr);
         padding: 2rem 50px;
     }
 
     .skills_container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem 50px;
+    }
+
+    .projects__container{
         grid-template-columns: repeat(2, 1fr);
         padding: 2rem 50px;
     }
