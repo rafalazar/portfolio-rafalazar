@@ -36,6 +36,8 @@ header h2 {
 .main__about {
   background-color: rgba(0, 168, 255, 0.4);
   border: 1px solid rgb(0, 168, 255);
+  box-shadow: 0 0 5px rgba(0, 168, 255, 1),
+  0 0 25px rgba(0, 168, 255, 1);
   margin-top: 50px;
   padding-top: 20px;
   border-radius: 15px;
@@ -100,6 +102,8 @@ header h2 {
 .main__skills {
   background-color: rgba(232, 65, 24, 0.4);
   border: 1px solid rgb(232, 65, 24);
+  box-shadow: 0 0 5px rgba(232, 65, 24, 1),
+  0 0 25px rgba(232, 65, 24, 1);
   margin-top: 50px;
   padding-top: 20px;
   border-radius: 15px;
@@ -221,6 +225,8 @@ header h2 {
 .main__projects {
   background-color: rgba(76, 209, 55, 0.4);
   border: 1px solid rgb(76, 209, 55);
+  box-shadow: 0 0 5px rgba(76, 209, 55, 1),
+  0 0 25px rgba(76, 209, 55, 1);
   margin-top: 50px;
   padding-top: 20px;
   border-radius: 15px;
@@ -261,6 +267,8 @@ header h2 {
 .main__contact {
   background-color: rgba(156, 136, 255, 0.4);
   border: 1px solid rgb(156, 136, 255);
+  box-shadow: 0 0 5px rgba(156, 136, 255, 1), 
+  0 0 25px rgba(156, 136, 255, 1);
   margin-top: 50px;
   padding-top: 20px;
   border-radius: 15px;
@@ -346,6 +354,8 @@ header h2 {
 .main__footer {
   background-color: rgba(53, 59, 72, 0.4);
   border: 1px solid rgb(53, 59, 72);
+  /* box-shadow: 0 0 5px rgba(53, 59, 72, 1),
+  0 0 25px rgba(53, 59, 72, 1); */
   margin-top: 50px;
   padding-top: 20px;
   border-radius: 15px;
