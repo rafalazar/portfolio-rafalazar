@@ -525,4 +525,8 @@ header h2 {
   .footer__container {
     grid-template-columns: 1fr;
   }
+
+  .projects__container {
+    grid-template-columns: 1fr;
+  }
 }
