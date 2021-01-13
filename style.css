@@ -15,10 +15,14 @@ body {
 
 header {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .header__title {
-  font-size: 60px;
+  width: 9ch;
+  font-size: 80px;
   font-weight: 500;
   padding: 20px;
   text-align: center;
@@ -282,6 +286,64 @@ header h2 {
   gap: 1rem;
   padding: 1rem 80px;
   font-size: 1.2rem;
+  color: black;
+  margin-top: 20px;
+}
+
+.projects__container .project__card {
+  position: relative;
+  max-width: 300px;
+  height: 100px;
+  background: #fff;
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(76, 209, 55, 0.5);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.projects__container .project__card:hover {
+  height: 420px;
+}
+
+.projects__container .project__card .project__imgBox {
+  position: relative;
+  width: 260px;
+  height: 100px;
+  top: -60px;
+  left: 5px;
+  z-index: 1;
+  /* box-shadow: 0 5px 20px rgba(76, 209, 55, 0.2); */
+}
+
+.projects__container .project__card .project__imgBox img {
+  max-width: 100%;
+  border-radius: 4px;
+  object-fit: contain;
+}
+
+.projects__container .project__card .project__info {
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.project__info ul {
+  list-style-type: none;
+}
+
+.projects__container .project__card:hover .project__info {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.2s;
 }
 
 /* Contact me section */
