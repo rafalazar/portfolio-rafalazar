@@ -22,7 +22,7 @@ header {
 
 .header__title {
   width: 9ch;
-  font-size: 80px;
+  font-size: 100px;
   font-weight: 500;
   padding: 20px;
   text-align: center;
@@ -268,7 +268,7 @@ header h2 {
   left: 50%;
   transform: translateX(-50%);
   height: 4px;
-  width: 135px;
+  width: 275px;
   background-color: rgb(76, 209, 55);
   border-radius: 2px;
 }
