@@ -26,10 +26,6 @@ header {
   font-weight: 500;
   padding: 20px;
   text-align: center;
-  /*inicio pruebas*/
-  /* -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
-  line-height: 0.70em;
-  outline: none; */
   color: rgba(39, 60, 117,1.0);
   animation: animate 5s linear infinite;
 }
