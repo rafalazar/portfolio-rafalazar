@@ -107,6 +107,7 @@ header h2 {
   padding: 20px;
   display: flex;
   justify-content: center;
+  border-radius: 15px;
 }
 
 .about__p {
@@ -284,6 +285,10 @@ header h2 {
   font-size: 1.2rem;
   color: black;
   margin-top: 20px;
+}
+
+.project__card {
+  border-radius: 15px;
 }
 
 .projects__container .project__card {
