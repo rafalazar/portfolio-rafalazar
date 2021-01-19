@@ -22,6 +22,7 @@ header {
 
 .header__title {
   width: 14ch;
+  /* width: 100%; */
   font-size: 100px;
   font-weight: 500;
   padding: 20px;
@@ -537,6 +538,10 @@ header h2 {
 }
 
 @media screen and (max-width: 650px) {
+  .header__title {
+    font-size: 70px;
+  }
+
   .skills_container {
     grid-template-columns: 1fr;
   }
@@ -551,5 +556,15 @@ header h2 {
 
   .projects__container {
     grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .header__title {
+    font-size: 60px;
+  }
+
+  .about__right {
+    width: 100%;
   }
 }
