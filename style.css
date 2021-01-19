@@ -413,8 +413,9 @@ header h2 {
   padding: 30px;
   text-align: center;
 }
-.contact-form h1 {
-  margin-bottom: 10px;
+.contact-form h3 {
+  margin-bottom: 30px;
+  font-size: 25px;
 }
 
 .contact-form-txt {
