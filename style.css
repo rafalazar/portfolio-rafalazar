@@ -282,10 +282,12 @@ header h2 {
   font-size: 1.2rem;
   color: black;
   margin-top: 20px;
+  /* height: 50px; */
 }
 
 .project__card {
   border-radius: 15px;
+  left: 15px;
 }
 
 .projects__container .project__card {
