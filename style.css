@@ -64,6 +64,9 @@ header h2 {
   margin-top: 50px;
   padding-top: 20px;
   border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about__header {
@@ -92,13 +95,21 @@ header h2 {
   align-items: center;
   text-align: center;
   gap: 1rem;
-  padding: 3rem 80px; /*antes -> 1rem*/
+  padding: 3rem 40px; /*antes -> 1rem*/
   font-size: 1.2rem;
+}
+
+.about__left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about__img {
   border-radius: 140px;
-  width: 245px;
+  width: 100%;
+  max-width: 245px;
+  height: auto;
   border: 1.5px solid rgb(0, 168, 255);
   margin: 10px;
 }
@@ -109,12 +120,13 @@ header h2 {
   display: flex;
   justify-content: center;
   border-radius: 15px;
+  width: 100%;
 }
 
 .about__p {
   font-size: 20px;
   text-align: justify;
-  width: 400px;
+  width: 100%;
 }
 
 /*------Skills Section--------*/
@@ -564,9 +576,5 @@ header h2 {
 @media screen and (max-width: 450px) {
   .header__title {
     font-size: 60px;
-  }
-
-  .about__right {
-    width: 100%;
   }
 }
