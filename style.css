@@ -286,33 +286,27 @@ header h2 {
 }
 
 .projects__container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
   text-align: center;
-  gap: 1rem;
+  gap: 3rem;
   padding: 1rem 80px;
   font-size: 1.2rem;
   color: black;
   margin-top: 20px;
-  /* height: 50px; */
 }
 
 .project__card {
   border-radius: 15px;
-  left: 15px;
 }
 
 .projects__container .project__card {
-  position: relative;
   max-width: 300px;
   height: 100px;
   background: #fff;
   margin: 30px 10px;
   padding: 20px 15px;
-  display: flex;
-  flex-direction: column;
   box-shadow: 0 5px 20px rgba(76, 209, 55, 0.5);
   transition: 0.3s ease-in-out;
   cursor: pointer;
@@ -329,7 +323,6 @@ header h2 {
   top: -60px;
   left: 5px;
   z-index: 1;
-  /* box-shadow: 0 5px 20px rgba(76, 209, 55, 0.2); */
 }
 
 .projects__container .project__card .project__imgBox img {
@@ -397,7 +390,6 @@ header h2 {
 .contact-in {
   width: 80%;
   height: auto;
-  /* margin: auto; */
   display: flex;
   flex-wrap: wrap;
   padding: 10px;
@@ -405,7 +397,6 @@ header h2 {
   background: transparent;
   margin-top: 25px;
   margin-bottom: 35px;
-  /* box-shadow: 0px 0px 10px 0px #666; */
 }
 
 .contact-map {
